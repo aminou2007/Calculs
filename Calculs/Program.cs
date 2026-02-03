@@ -28,11 +28,12 @@ namespace Calculs
                 Console.Write("Choix :                          ");
                 choix = Console.ReadLine();
                 // traitement des choix
+                val1 = rand.Next(1, 10);
+                val2 = rand.Next(1, 10);
                 switch (choix)
                 {
                     case "1": // addition
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+                        
                         // saisie de la réponse
                         correct = false;
                         while (!correct)
@@ -59,9 +60,7 @@ namespace Calculs
                             Console.WriteLine("Faux : " + val1 + " + " + val2 + " = " + solution);
                         }
                         break;
-                    case "2": // multiplication
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+                    case "2": // multiplication                       
                         // saisie de la réponse
                         correct = false;
                         while (!correct)
